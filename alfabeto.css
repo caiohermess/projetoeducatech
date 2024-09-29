@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(23, 218, 215, 0.501);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+header {
+    background-color: rgb(144, 0, 255);
+    width: 100%;
+}
+
+a.externo {
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 10px;
+    margin: 5px;
+}
+
+a.externo:hover {
+    background-color: #ff8000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000078;
+    height: 7vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin: 20px;
+}
+
+.imgIlustrativa {
+    margin-top: 30px;
+    width: 150px;
+}
+
+.alinharProf, .alinharAluno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.btn-prof, .btn-aluno {
+    padding: 25px;
+    width: 300px;
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.529);
+    color: #fff;
+    border-radius: 15px;
+}
+
+main {
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo comum para todos os cards */
+.card {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: none;
+    box-shadow: rgb(83, 94, 106) 0px 20px 30px -10px;
+}
+
+/* Estilos específicos para cada card com cores agrupadas */
+.card1 { background-color: #D7E0FF; } /* 1 */
+.card2, .card23 { background-color: #FFD7FB; } /* 2, 23 */
+.card3, .card15, .card26 { background-color: #FFE5D7; } /* 3, 15, 26 */
+.card4, .card11 { background-color: #FEFFD7; } /* 4, 11 */
+.card5, .card25 { background-color: #E8FFD7; } /* 5, 25 */
+.card6 { background-color: #D7FFFD; } /* 6 */
+.card7, .card19 { background-color: #E1D7FF; } /* 7, 19 */
+.card8 { background-color: #FFD7D7; } /* 8 */
+.card9 { background-color: #D7E9FF; } /* 9 */
+.card10 { background-color: #D7FFD7; } /* 10 */
+.card12 { background-color: #D1FDFA; } /* 12 */
+.card13 { background-color: #FDD1F8; } /* 13 */
+.card14 { background-color: #D48686; } /* 14 */
+.card16 { background-color: #D7E2FF; } /* 16 */
+.card17 { background-color: #BDBDBD; } /* 17 */
+.card18, .card24 { background-color: #B89696; } /* 18, 24 */
+.card20 { background-color: #FFBCBC; } /* 20 */
+.card21 { background-color: #E4FFD7; } /* 21 */
+.card22 { background-color: #FDFF9E; } /* 22 */
+
+.imgCard {
+    width: 230px;
+}
+
+.btn-card {
+    border: none;
+    font-weight: 600;
+    background-color: rgba(165, 42, 42, 0.822);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Outfit, sans-serif;
+    transition: .2s;
+}
+
+.btn-card:hover, .btn-prof:hover, .btn-aluno:hover {
+    cursor: pointer;
+    background-color: #ffa600;
+}
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #4a148c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
