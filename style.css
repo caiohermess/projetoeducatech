@@ -1,133 +1,136 @@
 @font-face {
-    font-family: 'Outfit';
-    src: url(fonts/Outfit-Regular.ttf);
+  font-family: "Outfit";
+  src: url(fonts/Outfit-Regular.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body, html {
-    background-color: rgb(233, 255, 255);
-    font-family: Outfit, sans-serif;
-    height: 100vh;
+body,
+html {
+  background-color: rgb(233, 255, 255);
+  font-family: Outfit, sans-serif;
+  height: 100vh;
 }
 
 .logo {
-    width: 50px;
+  width: 50px;
 }
 
 header {
-    background-color: rgb(144, 0, 255);
+  background-color: rgb(144, 0, 255);
 }
 
 a.externo {
-    color: #fff;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 10px;
-    margin: 5px 5px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 10px;
+  margin: 5px 5px;
 }
 
-a.externo:hover {
-    background-color: #ff8000;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+a.externo:hover,
+a.active {
+  background-color: #ff8000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00000078;
-    height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000078;
+  height: 7vh;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-list li {
-    letter-spacing: 2px;
-    margin: 20px;
+  letter-spacing: 2px;
+  margin: 20px;
 }
 
 #container {
-    margin-top: 50px;
-    margin-right: 60px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 50px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-around;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    background-color: #fef056aa;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: rgb(74, 88, 102) 0px 20px 30px -10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fef056aa;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: rgb(74, 88, 102) 0px 20px 30px -10px;
 }
 
 h1 {
-    margin-top: -20px;
-    padding: 30px;
-    text-align: center;
+  margin-top: -20px;
+  padding: 30px;
+  text-align: center;
 }
 
 hr {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .fotoMenino {
-    margin-top: 30px;
-    text-align: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .fotoCard {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 h2 {
-    margin-top: 35px;
-    font-weight: 200;
-    font-size: 20px;
-    margin-left: 15px;
+  margin-top: 35px;
+  font-weight: 200;
+  font-size: 20px;
+  margin-left: 15px;
 }
 
 .btn {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    margin-top: 60px;
-    width: 200px;
-    padding: 15px;
-    background-color: #4C0087;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 1em;
-    transition: .3s;
+  margin-top: 60px;
+  width: 200px;
+  padding: 15px;
+  background-color: #4c0087;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.3s;
 }
 
 button:hover {
-    cursor: pointer;
-    width: 230px;
+  cursor: pointer;
+  width: 230px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 footer {
-    margin-top: 30px;
-    background-color: #4a148c;
-    color: white;
-    padding: 12px;
-    text-align: center;
-  }
+  margin-top: 30px;
+  background-color: #4a148c;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
