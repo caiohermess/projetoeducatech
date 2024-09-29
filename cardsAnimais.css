@@ -1,157 +1,204 @@
 @font-face {
-    font-family: 'Outfit';
-    src: url(fonts/Outfit-Regular.ttf);
+  font-family: "Outfit";
+  src: url(fonts/Outfit-Regular.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body, html {
-    background-color: rgb(202, 255, 255);
-    font-family: Outfit, sans-serif;
-    height: 100vh;
+body,
+html {
+  background-color: rgb(202, 255, 255);
+  font-family: Outfit, sans-serif;
+  height: 100vh;
+}
+
+.nav-list a.externo:hover,
+.nav-list .active {
+  background-color: #ff8000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .logo {
-    width: 50px;
+  width: 50px;
 }
 
 header {
-    background-color: rgb(144, 0, 255);
+  background-color: rgb(144, 0, 255);
 }
 
 a.externo {
-    color: #fff;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 10px;
-    margin: 5px 5px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 10px;
+  margin: 5px 5px;
 }
 
 a.externo:hover {
-    background-color: #ff8000;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #ff8000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00000078;
-    height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000078;
+  height: 7vh;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-list li {
-    letter-spacing: 2px;
-    margin: 20px;
+  letter-spacing: 2px;
+  margin: 20px;
 }
 
-.alinharProf, .alinharAluno {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    width: 100%;
+.alinharProf,
+.alinharAluno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  width: 100%;
 }
 
-.btn-prof, .btn-aluno {
-    padding: 25px;
-    width: 300px;
-    font-family: Outfit, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    border: none;
-    background-color: rgba(255, 0, 0, 0.529);
-    color: #fff;
-    border-radius: 15px;
+.btn-prof,
+.btn-aluno {
+  padding: 25px;
+  width: 300px;
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.529);
+  color: #fff;
+  border-radius: 15px;
 }
 
-.btn-prof:hover, .btn-aluno:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: #ffa600;
+.btn-prof:hover,
+.btn-aluno:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ffa600;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .card {
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 300px;
-    border: none;
-    box-shadow: rgb(83, 94, 106) 0px 20px 30px -10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border: none;
+  box-shadow: rgb(83, 94, 106) 0px 20px 30px -10px;
 }
 
 /*Alguns cards tem cores em comum, então pra otimizar o código, aqui está sendo feita a junção dos cards com cores iguais*/
-.card1, .card10, .card17 { background-color: #1375BC; }
-.card2, .card12 { background-color: #00B1B6; }
-.card3, .card14, .card21, .card24 { background-color: #019669; }
-.card4, .card11, .card16 { background-color: #BE5B98; }
-.card5 { background-color: #FAA500; }
-.card6, .card13, .card23 { background-color: #7B6EB1; }
-.card7, .card15 { background-color: #00A7E7; }
-.card8, .card20 { background-color: #F28501; }
-.card9, .card18 { background-color: #EA503F; }
-.card19 { background-color: #1C7ABE; }
-.card22 { background-color: #5E5487; }
+.card1,
+.card10,
+.card17 {
+  background-color: #1375bc;
+}
+.card2,
+.card12 {
+  background-color: #00b1b6;
+}
+.card3,
+.card14,
+.card21,
+.card24 {
+  background-color: #019669;
+}
+.card4,
+.card11,
+.card16 {
+  background-color: #be5b98;
+}
+.card5 {
+  background-color: #faa500;
+}
+.card6,
+.card13,
+.card23 {
+  background-color: #7b6eb1;
+}
+.card7,
+.card15 {
+  background-color: #00a7e7;
+}
+.card8,
+.card20 {
+  background-color: #f28501;
+}
+.card9,
+.card18 {
+  background-color: #ea503f;
+}
+.card19 {
+  background-color: #1c7abe;
+}
+.card22 {
+  background-color: #5e5487;
+}
 
 .imgCard {
-    width: 230px;
+  width: 230px;
 }
 
 .btn-card {
-    border: none;
-    font-weight: 600;
-    background-color: rgb(255, 255, 0);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-family: Outfit, sans-serif;
-    transition: .2s;
+  border: none;
+  font-weight: 600;
+  background-color: rgb(255, 255, 0);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: Outfit, sans-serif;
+  transition: 0.2s;
 }
 
 .btn-card:hover {
-    cursor: pointer;
-    background-color: #ffa600;
+  cursor: pointer;
+  background-color: #ffa600;
 }
 
 .alinharPagAlfa {
-    text-align: center;
+  text-align: center;
 }
 
 .pagAlfa {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #4a148c;
-    font-size: 18px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4a148c;
+  font-size: 18px;
 }
 
 .pagAlfa:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer {
-    margin-top: 30px;
-    background-color: #4a148c;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  margin-top: 30px;
+  background-color: #4a148c;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
